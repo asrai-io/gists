@@ -12,7 +12,16 @@
 
 ## Dealing with multiple accounts (more to follow...)
 
-(For git bash on windows, upgrade the installation and don't use the windows credential manager)
+__For git bash on windows:__
+Upgrade the installation and don't use the windows credential manager, this will install a hook into git push, pull, ...
+
+__macos:__
+See: <https://github.com/microsoft/Git-Credential-Manager-Core>
+
+```console
+> brew tap microsoft/git
+> brew install --cask git-credential-manager-core
+```
 
 - logout from the browser session
 - delete the current account using the command line
