@@ -10,7 +10,10 @@
 
 ## dealing with multiple accounts (more to follow...)
 
-delete the current account, the push, select browser login
+- logout from the browser session
+- delete the current account using trhe command line
+- push
+- select browser login
 
 ```console
 > git credential-manager delete https://github.com
