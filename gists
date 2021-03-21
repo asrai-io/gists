@@ -3,8 +3,8 @@
 THIS_FOLDER_NAME=$(dirname $0)
 
 if [ -z $1 ]; then
-	$THIS_FOLDER_NAME/commands/--ls $THIS_FOLDER_NAME $@
-	exit
+  $THIS_FOLDER_NAME/commands/--ls $THIS_FOLDER_NAME $@
+  exit
 fi
 
 for COMMAND in $(ls $THIS_FOLDER_NAME/commands)
