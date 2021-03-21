@@ -1,4 +1,6 @@
-# Change commit name and email
+# Managing your git credentials
+
+## Change commit name and email
 
 ```console
 > git config --global user.name name
@@ -8,13 +10,16 @@
 > git config --global --get user.email
 ```
 
-## dealing with multiple accounts (more to follow...)
+## Dealing with multiple accounts (more to follow...)
+
+(For git bash on windows, upgrade the installation and don't use the windows credential manager)
 
 - logout from the browser session
 - delete the current account using the command line
-- push
-- select browser login
 
 ```console
 > git credential-manager delete https://github.com
+> git push # triggers prompt for login
 ```
+
+- select browser login
