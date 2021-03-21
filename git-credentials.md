@@ -7,3 +7,11 @@
 > git config --global --get user.name
 >% git config --global --get user.email
 ```
+
+## dealing with multiple accounts (more to follow...)
+
+delete the current account, the push, select browser login
+
+```console
+> git credential-manager delete https://github.com
+```
