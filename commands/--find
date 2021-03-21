@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "$1"x == "x" ]; then
   echo error: missing folder_name argument

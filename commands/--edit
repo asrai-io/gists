@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "$1"x == "x" ]; then
   echo error: missing folder_name argument
@@ -12,10 +12,18 @@ if [ "$2"x == "x" ]; then
   exit
 fi
 
+# assign in order of least favourite
+[[ $(which vi) != *"not found"* && $(which vi) != "" ]] && EDITOR=vi
+[[ $(which vim) != *"not found"* && $(which vim) != "" ]] && EDITOR=vim
+[[ $(which nano) != *"not found"* && $(which nano) != "" ]] && EDITOR=nano
+[[ $(which code) != *"not found"* && $(which code) != "" ]] && EDITOR=code
+
+[[ -z $EDITOR ]] && echo no text editor found && exit
+
 for FILE in $(ls $1)
 do
   if [ "$2"x == "$FILE"x ]; then
-    code $1/$2
+    $EDITOR $1/$2
     exit
   fi
 done
