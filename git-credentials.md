@@ -18,6 +18,21 @@ Upgrade the installation and don't use the windows credential manager, this will
 __macos:__
 See: <https://github.com/microsoft/Git-Credential-Manager-Core>
 
+__macos__:
+erase git credentials
+
+<https://stackoverflow.com/questions/11067818/how-do-you-reset-the-stored-credentials-in-git-credential-osxkeychain>
+
+__NOTE:__: press enter after entering the first command, then type the next lines, pressing enter afterwards
+
+```shell
+$ git credential-osxkeychain erase ⏎
+ host=github.com  ⏎
+ host=github.com    ⏎
+ ⏎
+ ⏎
+```
+
 ```console
 > brew tap microsoft/git
 > brew install --cask git-credential-manager-core
