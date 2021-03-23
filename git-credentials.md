@@ -25,10 +25,10 @@ erase git credentials
 
 __NOTE:__:
 press enter after entering the first command, then type the next lines, pressing enter afterwards
-otherwise press return afer every line and twice at the end
+and twice at the end
 
 ```shell
-git credential-osxkeychain erase
+sudo git credential-osxkeychain erase
 host=github.com
 protocol=https
  ⏎
