@@ -28,7 +28,7 @@ Install the fonts as listed:
 
 Install oh-my-zsh
 
-```zsh
+```bash
 > sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -45,12 +45,12 @@ Create a batch file to run Cygwin - "Cygwin-zsh - MesloLGS NF.bat" in the %APPS%
 - Select the %APPS%\Cygwin64\Cygwin.ico icon file
 - Drag the shortcut to the taskbar and pin it
 
-```zsh
+```bash
 export TERM=xterm-256color
 setopt globdots
 ```
 
-```zsh
+```bash
 cd /cygdrive/c/dev
 ```
 
@@ -58,7 +58,7 @@ To select a custom starting folder, at the end of ~/.zsh
 
 Install powerlevel10k - note this may also require the Cygwin git
 
-```zsh
+```bash
 > git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 ... alternatively
 > cd ~/.oh-my-zsh/custom/themes
@@ -67,12 +67,15 @@ Install powerlevel10k - note this may also require the Cygwin git
 
 in .zshrc
 
-```zsh
+```bash
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
-```zsh
+```bash
 > p10k configure
 ```
+
+- install fonts macos if the proper fonts are not installed
+<https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k>
 
 [vscode integration](./vscode-bash-zsh.md)
