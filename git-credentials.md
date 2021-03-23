@@ -23,12 +23,14 @@ erase git credentials
 
 <https://stackoverflow.com/questions/11067818/how-do-you-reset-the-stored-credentials-in-git-credential-osxkeychain>
 
-__NOTE:__: press enter after entering the first command, then type the next lines, pressing enter afterwards
+__NOTE:__:
+press enter after entering the first command, then type the next lines, pressing enter afterwards
+otherwise press return afer every line and twice at the end
 
 ```shell
-$ git credential-osxkeychain erase ⏎
- host=github.com  ⏎
- host=github.com    ⏎
+git credential-osxkeychain erase
+host=github.com
+protocol=https
  ⏎
  ⏎
 ```
