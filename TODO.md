@@ -14,3 +14,5 @@
 - Schema definition for tags and sections (DSL)
 - Schema parser & syntax checker (AST)
 - Content-based search
+- Merge gists and scripts
+- Merge scripts/shell

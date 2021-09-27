@@ -2,20 +2,20 @@
 
 ## branching
 
-prime folder with all branch info
+- prime folder with all branch info
 
 ```console
 > git fetch origin
 ```
 
-List branches (all/remote)
+- list branches (all/remote)
 
 ```console
 > git branch -a
 > git branch -r
 ```
 
-create/view/delete/switch local branch
+- create/view/delete/switch local branch
 
 ```console
 > git branch X
@@ -24,9 +24,15 @@ create/view/delete/switch local branch
 > git checkout X
 ```
 
+- change pipe behaviour (default is to pipe to less) when using git branch commands
+
+```console
+> git config --global pager.branch false
+```
+
 **NOTE** switch branch only works if it exists locally
 
-Switch to remote branch
+- switch to remote branch
 
 ```console
 > git fetch && git checkout $branch
@@ -34,27 +40,35 @@ Switch to remote branch
 
 ## clean/delete/unstage
 
-remove all untracked files/delete all unstaged changes in current folder/unstage
+- remove all untracked files/delete all unstaged changes in current folder/unstage
 
 ```console
 > git clean -fd
 > git checkout .
 > git reset
-# or
+```
+
+- reset
+
+```console
 > git reset --hard
+```
+
+- really reset hard...
+
+```console
+> git rm .gitattributes && git add -A && git reset --hard
 ```
 
 ## LFS errors
 
-'Encountered 1 file(s) that should have been pointers, but weren't:'
+- ERROR: 'Encountered 1 file(s) that should have been pointers, but weren't:'
 
 ```console
 > git rm .gitattributes
 > git add -A
 > git reset --hard
 ```
-
-$ git rm .gitattributes && git add -A && git reset --hard
 
 ## merging
 
